@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Blue-Canoe Invoice is Ready</title>
+</head>
+<body style="margin: 0; padding: 0; background: #f4f4f4; font-family: Inter, Arial, sans-serif;">
+  <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0; padding: 20px; background: #f4f4f4;">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" width="600" style="background: #ffffff; padding: 20px; border-radius: 8px;">
+
+          <!-- Include Header -->
+          {{ INCLUDE: base-header.html }}
+
+          <!-- Main Content -->
+          <tr>
+            <td style="padding: 20px; color: #333333; font-size: 16px; line-height: 1.5;">
+              <h1 style="color: #0092E7; font-size: 24px; margin: 0;">Your Invoice is Ready</h1>
+              <p>Hi {{ CLIENT_NAME }},</p>
+              <p>Thank you for choosing Blue-Canoe. Your latest invoice is now available and ready for payment.</p>
+              <p>Below is a summary of the invoice details:</p>
+
+              <table cellpadding="0" cellspacing="0" width="100%" style="margin: 20px 0; border-collapse: collapse;">
+                <tr>
+                  <td style="padding: 8px; border: 1px solid #ddd;"><strong>Service</strong></td>
+                  <td style="padding: 8px; border: 1px solid #ddd;">{{ SERVICE_DESCRIPTION }}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px; border: 1px solid #ddd;"><strong>Amount Due</strong></td>
+                  <td style="padding: 8px; border: 1px solid #ddd;">{{ AMOUNT_DUE }}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px; border: 1px solid #ddd;"><strong>Due Date</strong></td>
+                  <td style="padding: 8px; border: 1px solid #ddd;">{{ DUE_DATE }}</td>
+                </tr>
+              </table>
+
+              <p>To view and pay your invoice, click the button below:</p>
+            </td>
+          </tr>
+
+          <!-- Include Button -->
+          {{ INCLUDE: base-button.html }}
+
+          <!-- Note -->
+          <tr>
+            <td style="padding: 20px; color: #666666; font-size: 14px; line-height: 1.5;">
+              <p>If you have any questions regarding this invoice, please <a href="#" style="color: #0092E7; text-decoration: none;">contact our support team</a>.</p>
+              <p>Thank you for being a valued Blue-Canoe customer.</p>
+            </td>
+          </tr>
+
+          <!-- Include Footer -->
+          {{ INCLUDE: base-footer.html }}
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
