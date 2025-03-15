@@ -4,31 +4,54 @@
   <meta charset="UTF-8">
   <title>Blue-Canoe Design System Preview</title>
   <link rel="stylesheet" href="../css/blue-canoe-base.css">
+  <link rel="stylesheet" href="../themes/blue-canoe-theme-default.css">
   <style>
-    body { padding: 2rem; }
-    h1 { margin-bottom: 1rem; }
+    body { padding: 2rem; background: var(--color-light); font-family: var(--font-body); }
+    h1, h2, h3, h4 { margin-bottom: 0.5rem; }
+    .section { margin-bottom: 3rem; }
+    .card { padding: 1.5rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .button-group button { margin-right: 1rem; }
+    input, textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid var(--color-secondary); border-radius: 0.25rem; }
   </style>
 </head>
 <body>
+
   <h1>Blue-Canoe Design System</h1>
-  <p>This is a live preview of the Blue-Canoe base design system.</p>
+  <p>A live preview of the Blue-Canoe base design system components.</p>
 
-  <h2>Buttons</h2>
-  <button>Primary Button</button>
-  <button class="btn">Secondary Button</button>
-
-  <h2>Cards</h2>
-  <div class="card">
-    <p>This is a card using the default system styles.</p>
+  <div class="section">
+    <h2>Typography</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>This is a standard paragraph of text using the system font stack.</p>
+    <small>This is meta text or smaller print.</small>
   </div>
 
-  <h2>Form Elements</h2>
-  <input type="text" placeholder="Input field">
-  <textarea placeholder="Textarea"></textarea>
+  <div class="section">
+    <h2>Buttons</h2>
+    <div class="button-group">
+      <button>Primary Button</button>
+      <button class="btn-secondary">Secondary Button</button>
+      <button disabled>Disabled Button</button>
+    </div>
+  </div>
 
-  <h2>Typography</h2>
-  <p>Body text example. This paragraph demonstrates the default font, size, and line height.</p>
-  <h3>Subheading</h3>
-  <small>Small/meta text example.</small>
+  <div class="section">
+    <h2>Cards</h2>
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>This is an example of a card component using system styles. Cards are great for grouping content.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Form Elements</h2>
+    <input type="text" placeholder="Input field">
+    <textarea placeholder="Textarea field"></textarea>
+    <button>Submit</button>
+  </div>
+
 </body>
 </html>
