@@ -2,56 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blue-Canoe Design System Preview</title>
-  <link rel="stylesheet" href="../css/blue-canoe-base.css">
-  <link rel="stylesheet" href="../themes/blue-canoe-theme-default.css">
-  <style>
-    body { padding: 2rem; background: var(--color-light); font-family: var(--font-body); }
-    h1, h2, h3, h4 { margin-bottom: 0.5rem; }
-    .section { margin-bottom: 3rem; }
-    .card { padding: 1.5rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .button-group button { margin-right: 1rem; }
-    input, textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid var(--color-secondary); border-radius: 0.25rem; }
-  </style>
+  <title>Blue-Canoe Design System</title>
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+  <header>
+    <h1>Blue-Canoe Design System</h1>
+  </header>
 
-  <h1>Blue-Canoe Design System</h1>
-  <p>A live preview of the Blue-Canoe base design system components.</p>
+  <section>
+    <h2>Official Logos</h2>
+    <p>Primary Logo:</p>
+    <img src="logo.png" alt="Blue-Canoe Logo" width="200">
+    <p>Dark Mode Logo:</p>
+    <img src="logo-light.png" alt="Blue-Canoe Dark Mode Logo" width="200">
+  </section>
 
-  <div class="section">
+  <section>
+    <h2>Color Palette</h2>
+    <ul>
+      <li><span style="background: #0092E7;"></span> Primary Blue: #0092E7</li>
+      <li><span style="background: #006699;"></span> Secondary Blue: #006699</li>
+      <li><span style="background: #FF9900;"></span> Accent: #FF9900</li>
+      <li><span style="background: #F4F4F4;"></span> Light Background: #F4F4F4</li>
+      <li><span style="background: #333333;"></span> Dark/Text: #333333</li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Typography</h2>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <p>This is a standard paragraph of text using the system font stack.</p>
-    <small>This is meta text or smaller print.</small>
-  </div>
+    <p style="font-family: Inter, Arial, sans-serif;">This is a sample of Inter font in action.</p>
+  </section>
 
-  <div class="section">
-    <h2>Buttons</h2>
-    <div class="button-group">
-      <button>Primary Button</button>
-      <button class="btn-secondary">Secondary Button</button>
-      <button disabled>Disabled Button</button>
+  <section>
+    <h2>Modular Email Components</h2>
+    <h3>Header</h3>
+    <div class="email-sample">
+      <img src="logo.png" alt="Email Header Sample" width="200">
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Cards</h2>
-    <div class="card">
-      <h3>Card Title</h3>
-      <p>This is an example of a card component using system styles. Cards are great for grouping content.</p>
+    <h3>Button</h3>
+    <div class="email-sample">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#0092E7" style="padding: 12px 20px; border-radius: 4px;">
+            <a href="#" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 16px;">Sample Button</a>
+          </td>
+        </tr>
+      </table>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Form Elements</h2>
-    <input type="text" placeholder="Input field">
-    <textarea placeholder="Textarea field"></textarea>
-    <button>Submit</button>
-  </div>
+    <h3>Footer</h3>
+    <div class="email-sample" style="font-size: 12px; color: #666666; padding: 20px;">
+      Blue-Canoe &bull; <a href="#" style="color: #0092E7; text-decoration: none;">Unsubscribe</a> &bull; <a href="#" style="color: #0092E7; text-decoration: none;">Contact Support</a>
+    </div>
+  </section>
 
+  <section>
+    <h2>Downloads</h2>
+    <ul>
+      <li><a href="https://github.com/xword9009/blue-canoe-design-system/releases/latest/download/blue-canoe-logos-final.zip">Download Logos</a></li>
+      <li><a href="https://github.com/xword9009/blue-canoe-design-system/releases/latest/download/blue-canoe-email-components.zip">Download Email Templates</a></li>
+    </ul>
+  </section>
 </body>
 </html>
