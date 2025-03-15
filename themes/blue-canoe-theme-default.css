@@ -1,5 +1,14 @@
+/* ============================================================
+   BLUE-CANOE THEME: Default (v20250314.1)
+   Purpose: Brand color theme extension for blue-canoe-base.css
+   Author: Blue-Canoe | Date: 2025-03-14
+============================================================ */
+
 :root {
-  --color-primary: #123456;
-  --color-secondary: #789abc;
-  --color-accent: #f1c40f;
+  /* --- Brand Colors --- */
+  --color-primary: #0092E7;
+  --color-secondary: #006699;
+  --color-accent: #FF9900;
+  --color-light: #F4F4F4;
+  --color-dark: #333333;
 }
