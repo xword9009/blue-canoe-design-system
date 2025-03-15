@@ -2,27 +2,30 @@
 
 **Version:** v20250314.1  
 **Author:** Blue-Canoe  
-**Purpose:**  
-A universal, golden ratio-based design system for Blue-Canoe user-facing materials, including websites, emails, documents, and dashboards. 
 
-## Contents
+---
 
-- `css/blue-canoe-base.css`: Core styling system based on Golden Ratio (1.618) and Inter font family.
-- `docs/Design-Principles.md`: Guidelines on how to use and extend the design system.
+## Purpose
 
-## Core Principles
+The **Blue-Canoe Design System** is a **modular, golden ratio-based CSS framework** designed for creating consistent, professional, and visually pleasing user-facing materials—**websites, emails, dashboards, and documents**.
 
-- Golden Ratio (1.618) driven spacing and sizing.
-- Inter font family for all text, with system fallbacks.
-- Modular CSS ready for future theming (dark mode, branding).
-- Responsive and accessible out-of-the-box.
+It is **fully modular**, **version-controlled**, and designed to grow over time with theming and branding flexibility.
 
-## Versioning
+---
 
-- All changes tracked via `CHANGELOG.md`.
-- Version format: `vYYYYMMDD.X` (e.g., v20250314.1).
+## Key Features
 
-## Future Plans
+- ✅ **Golden Ratio (1.618)** based spacing and layout.
+- ✅ **Inter font family** for clean, modern typography.
+- ✅ Modular **core CSS** (`blue-canoe-base.css`) covering layout, buttons, forms, cards, and utilities.
+- ✅ Brand-specific **theme file** (`blue-canoe-theme-default.css`) for flexible branding.
+- ✅ **Version-controlled** and well-documented for long-term use.
 
-- Add modular themes (dark mode, print-friendly, etc.).
-- Extend system to cover emails, invoices, and admin panels.
+---
+
+## How to Use
+
+1. Include the base and theme CSS in your project:
+```html
+<link rel="stylesheet" href="css/blue-canoe-base.css">
+<link rel="stylesheet" href="themes/blue-canoe-theme-default.css">
