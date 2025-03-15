@@ -20,6 +20,28 @@
     .footer {
       font-size: 0.8rem; color: var(--color-dark); margin-top: 2rem; text-align: center;
     }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #222222 !important;
+        color: #ffffff !important;
+      }
+      .container {
+        background: #333333 !important;
+        color: #ffffff !important;
+      }
+      h1, h2, h3, h4 {
+        color: #00FFFF !important;
+      }
+      .button {
+        background: #0092E7 !important;
+        color: white !important;
+      }
+      .footer {
+        color: #bbbbbb !important;
+      }
+    }
   </style>
 </head>
 <body>
