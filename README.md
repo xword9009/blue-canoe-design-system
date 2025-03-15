@@ -29,3 +29,4 @@ It is **fully modular**, **version-controlled**, and designed to grow over time 
 ```html
 <link rel="stylesheet" href="css/blue-canoe-base.css">
 <link rel="stylesheet" href="themes/blue-canoe-theme-default.css">
+<!-- Test edit via GitHub Desktop -->
